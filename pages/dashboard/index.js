@@ -1,35 +1,30 @@
 import React from "react";
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from "../../styles/bootstrap.min.css"
-
-
+import Head from "next/head";
+import Section from "../../components/coins/index"
+import News from "../../components/news/index"
+import Header from "../../components/header";
 
 const Dashboard = () =>{
 
     return(
         <>
+        <Head>
+         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        </Head>
 
-    <div class="col-12 col-lg-5">
-      <div class="cryptos-prices-table">
-    <div class="single-price-table d-flex align-items-center justify-content-between">
+        <Header />
+        <Section />
+        {/* <News /> */}
 
-    <div class="p-content d-flex align-items-center">
-    <span>01</span>
-    <Image src="/img/bg-img/bitcoin.png" alt="" width="64" height="64" />
-    <p>Bitcoin <span>BTC</span></p>
-    </div>
-
-<div class="price increase">
-    <p>$12 456.78</p>
- </div>
- </div>
-</div>
-</div>
-
+        
+        
         </>
     )
+
+
+
+
 }
 
-export default Dashboard;
 
+export default Dashboard;
