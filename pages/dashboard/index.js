@@ -1,7 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
 import Header from '../../components/header';
-import Coin from '../../components/coins/coin/index';
+import Coin from '../../components/coin/index';
 
 export const getStaticProps = async () => {
   const res = await fetch(
@@ -25,12 +25,17 @@ const Dashboard = ({ data }) => {
 
       <Header />
 
+      <div className='d-flex flex-row flex-wrap justify-content-center'>
+
       {data.map((val) => {
         console.log(val);
 
         return (
           
-            <Coin
+          
+            <div className="p-2">
+
+            <Coin      
               key={val.id}
               name={val.name}
               price={val.current_price}
@@ -38,11 +43,16 @@ const Dashboard = ({ data }) => {
               marketcap={val.market_cap}
               volume={val.total_volume}
               image={val.image}
-              priceChange={val.price_change_percentage_24h}
+              priceChange={val.price_change_percentage_24h}          
             />
+            
+            </div>
+          
           
         );
+        
       })}
+      </div>
     </>
   );
 };
