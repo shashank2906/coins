@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
 
-
-.headContainer{
+.headContainer {
   margin-left: 40px;
   margin-right: 40px;
 }
@@ -18,7 +17,7 @@
   width: 260px;
   height: 42px;
   border-radius: 4px;
-  border: 2px solid #0d6efd;;
+  border: 2px solid #0d6efd;
   color: #e2e2e2;
   margin-top: 7px;
 }

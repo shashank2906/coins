@@ -6,11 +6,14 @@ const Header = () => {
     <>
       <div className={styles.headContainer}>
         <div className={styles.header}>
-          <h1 className={styles.brand}><lord-icon
-    src={`https://cdn.lordicon.com/vaeagfzc.json`}
-    trigger="loop"
-    style={{width: "60px", height:"60px"}}>
-</lord-icon>Desk</h1>
+          <h1 className={styles.brand}>
+            <lord-icon
+              src={`https://cdn.lordicon.com/vaeagfzc.json`}
+              trigger='loop'
+              style={{ width: '60px', height: '60px' }}
+            ></lord-icon>
+            Desk
+          </h1>
           <form>
             <input
               className={styles.inputField}
@@ -21,7 +24,7 @@ const Header = () => {
         </div>
       </div>
 
-      <script src="https://cdn.lordicon.com/lusqsztk.js"></script>
+      <script src='https://cdn.lordicon.com/lusqsztk.js'></script>
     </>
   );
 };

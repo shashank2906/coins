@@ -4,7 +4,7 @@ const coin = (props) => {
 
   return (
     <>
-    <div className="p-2">
+    <div className="p-2 card-container">
       <div className='card' style={{ width: '18rem' }}>
         <img src={props.image} style ={{width : "80px", alignSelf: "center" , margin: "10px"}} alt='myimg' />
         <h6 className='card-title'>{props.symbol}</h6>
@@ -14,9 +14,11 @@ const coin = (props) => {
           <p className='card-text'>
           <h5 className='card-title'>{props.price}</h5>
           <h5 className='card-title'>{props.marketcap}</h5>
+          <h5 className='card-title'>{props.volume}</h5>
+          <h5 className='card-title'>{props.priceChange}</h5>
           </p>
           <a href='#' className='btn btn-primary'>
-            Go somewhere
+            View Stats
           </a>
         </div>
       </div>

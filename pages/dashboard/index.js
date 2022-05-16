@@ -26,32 +26,24 @@ const Dashboard = ({ data }) => {
       <Header />
 
       <div className='d-flex flex-row flex-wrap justify-content-center'>
+        {data.map((val) => {
+          console.log(val);
 
-      {data.map((val) => {
-        console.log(val);
-
-        return (
-          
-          
-            <div className="p-2">
-
-            <Coin      
-              key={val.id}
-              name={val.name}
-              price={val.current_price}
-              symbol={val.symbol}
-              marketcap={val.market_cap}
-              volume={val.total_volume}
-              image={val.image}
-              priceChange={val.price_change_percentage_24h}          
-            />
-            
+          return (
+            <div className='p-2'>
+              <Coin
+                key={val.id}
+                name={val.name}
+                price={val.current_price}
+                symbol={val.symbol}
+                marketcap={val.market_cap}
+                volume={val.total_volume}
+                image={val.image}
+                priceChange={val.price_change_percentage_24h}
+              />
             </div>
-          
-          
-        );
-        
-      })}
+          );
+        })}
       </div>
     </>
   );
