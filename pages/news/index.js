@@ -1,10 +1,8 @@
-import React from 'react';
 const axios = require("axios");
 
 
-const news = () =>{
+const news = (props) =>{
 
-    const axios = require("axios");
 
     const options = {
       method: 'GET',
@@ -27,7 +25,7 @@ const news = () =>{
 
 return(
     <>
-    
+    <p>{props.value}</p>
     
     </>
 )

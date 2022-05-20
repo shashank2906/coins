@@ -2,6 +2,7 @@ import React from 'react';
 import Head from 'next/head';
 import Header from '../../components/header';
 import Coin from '../../components/coin/index';
+import News from "../../components/news/index"
 
 export const getStaticProps = async () => {
   const res = await fetch(
@@ -45,6 +46,8 @@ const Dashboard = ({ data }) => {
           );
         })}
       </div>
+
+      <News />
     </>
   );
 };
