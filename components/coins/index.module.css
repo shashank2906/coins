@@ -13,12 +13,17 @@
 
 .inputField {
   padding-left: 16px;
-  font-size: 14px;
+  font-size: 16px;
   width: 260px;
   height: 42px;
-  border-radius: 4px;
-  border: 2px solid #0d6efd;
-  color: #e2e2e2;
+  border-radius: 8px;
+  border: 2px solid #696969;
+  color: black;
+  margin-top: 14px;
+}
+
+.brand {
+  color: #696969;
   margin-top: 7px;
 }
 

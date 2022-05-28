@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+
+.cardContainer {
+  margin-top: 40px;
+}
+
+.card {
+  background-color: hsl(196, 40%, 91%);
+  border-radius: 20px;
+ 
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 10px 0px #404040;
+  cursor: pointer;
+}
+
+.imageflex {
+  display: flex;
+
+}
+.imageflex h6{
+    margin-left: 10px;
+    margin-top: 4px;
+}
+
+.red{
+    color: red;
+}
+
+.green{
+    color: green;
+}
+.img {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.cardbdy{
+    padding: 0px;
+    margin: 0px;
+}
+
+.card .mainf{
+    background-color: red;
+    padding: 10px;
+    min-width: 100%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+
+.priceContainerUP {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+   
+    font-size: 1rem;
+    color: white;
+    /* padding: 1rem; */
+    background-color: green;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.blue{
+    color: #41729F;
+    
+
+
+}
+
+.blue span{
+    color: black;
+}
+
+.red span{
+    color: black;
+}
+.priceContainerDOWN {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;  
+    font-size: 1rem;
+    color: white;
+    /* padding: 1rem; */
+    background-color: #f00606;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.priceChange{
+    margin-left: 10px;
+    margin-top: 15px;
+    align-self: center;
+}
