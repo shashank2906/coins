@@ -2,6 +2,14 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
+About the APP:
+It is a realtime crypto price tracker app implemented using nextJS , React and coinGecko API , Rapid API.
+![Screenshot 2022-05-28 at 4 34 08 PM](https://user-images.githubusercontent.com/71213649/170822924-9f365fad-39ac-4b89-874f-366bc6766eba.png)
+![Screenshot 2022-05-28 at 4 34 50 PM](https://user-images.githubusercontent.com/71213649/170822926-d3754a8f-a783-4b96-a1d3-a07b221a632e.png)
+![Screenshot 2022-05-28 at 4 34 57 PM](https://user-images.githubusercontent.com/71213649/170822928-4098586f-d9e5-4519-a067-7af66c0b8dd8.png)
+![Screenshot 2022-05-28 at 4 35 07 PM](https://user-images.githubusercontent.com/71213649/170822932-6f54046c-0772-48aa-96c8-4519d3e03bf8.png)
+
+
 First, run the development server:
 
 ```bash
