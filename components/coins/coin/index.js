@@ -30,12 +30,7 @@ const Coin = ({name, image, symbol,price,marketcap,volume, priceChange}) => {
         <div className='cardbdy'>   
           <p className={Styles.blue}> <span>marketcap :  $</span> {marketcap.toLocaleString()}</p>
           <p className={Styles.blue}><span>Volume(24h) :  $</span> {volume.toLocaleString()}</p>
-          {/* {priceChange < 0 ? (
-            <p className={Styles.red}><span>priceChange: $</span>{priceChange.toFixed(2)}</p>   
-
-          ):( <p className={Styles.green}>priceChange: ${priceChange.toFixed(2)}</p> )
-        
-        } */}
+          
                    
         </div>
 
