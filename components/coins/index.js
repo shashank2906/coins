@@ -4,24 +4,29 @@ import Coin from './coin/index';
 import axios from 'axios';
 import styles from './index.module.css';
 
-const Coins = () => {
-  const [coins, setcoins] = useState([]);
-  const [search, usesearch] = useState('');
+const Coins = () =>
+{
+  const [ coins, setcoins ] = useState([]);
+  const [ search, usesearch ] = useState('');
 
-  useEffect(() => {
+  useEffect(() =>
+  {
     axios
       .get(
         'https://api.coingecko.com/api/v3/coins/markets?vs_currency=USD&order=market_cap_desc&per_page=100&page=1&sparkline=false'
       )
-      .then((res) => {
+      .then((res) =>
+      {
         setcoins(res.data);
       })
-      .catch((err) => {
+      .catch((err) =>
+      {
         console.log(err);
       });
   }, []);
 
-  const handlechange = (e) => {
+  const handlechange = (e) =>
+  {
     usesearch(e.target.value);
   };
 
@@ -39,14 +44,14 @@ const Coins = () => {
         <div className={styles.header}>
           <h1 className={styles.brand}>
             <span className={styles.span}>C</span>
-            
+
             <lord-icon
               src={`https://cdn.lordicon.com/vaeagfzc.json`}
               trigger='loop'
-              style={{ width: '50px', height: '50px' , marginBottom:"9px"}}
+              style={{ width: '50px', height: '50px', marginBottom: "9px" }}
             ></lord-icon>
             <span className={styles.span}>INS</span>
-            
+
           </h1>
           <form>
             <input
@@ -60,7 +65,8 @@ const Coins = () => {
       </div>
 
       <div className='d-flex flex-row flex-wrap justify-content-center'>
-        {filteredCoins.map((coin) => {
+        {filteredCoins.map((coin) =>
+        {
           return (
             <div className='p-2'>
               <Coin
